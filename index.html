@@ -14,7 +14,7 @@
 
     <script>
       // Initialize GUN and tell it we will be storing all data under the key 'todos'.
-      var todos = Gun().get('todos')
+      var todos = Gun('http://gunjs.herokuapp.com/gun').get('todos')
 
       // Get the form element.
       var form = $('form')
